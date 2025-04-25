@@ -33,37 +33,38 @@
 mvn clean package
 ```
 
-This will generate two JAR files in the target/ folder:
+This will generate two JAR files in the ```target/ folder```:
 
-Scripto-1.0-SNAPSHOT.jar` (does not include dependencies)
+`Scripto-1.0-SNAPSHOT.jar` (does not include dependencies)
 
-Scripto-1.0-SNAPSHOT-shaded.jar (includes all dependencies)
+`Scripto-1.0-SNAPSHOT-shaded.jar` (includes all dependencies)
 
-Running the Application
-Using the Shaded JAR (Recommended)
+### Running the Application
+
+- Using the Shaded JAR (Recommended)
 To run the shaded JAR (which contains all dependencies, including Gson):
 
 ```bash
 java -jar target/Scripto-1.0-SNAPSHOT-shaded.jar
 ```
-Using the Regular JAR (Without Dependencies)
+- Using the Regular JAR (Without Dependencies)
 If you prefer to use the regular JAR (you must manage dependencies manually):
 
-Ensure all dependencies are available via Maven or classpath configuration.
+- Ensure all dependencies are available via Maven or classpath configuration.
 
-Run the regular JAR with:
+- Run the regular JAR with:
 
 ```bash
 java -jar target/Scripto-1.0-SNAPSHOT.jar
 ```
-Note: This will only work if all dependencies are included in the classpath.
+- Note: This will only work if all dependencies are included in the classpath.
 
 ### Usage
 Once the application is running, follow the on-screen prompts to add, update, and view your projects. You can add a new project by specifying:
 
-Project Name
+- Project Name
 
-Status (In Progress, Completed)
+- Status (In Progress, Completed)
 
-Programming Language used
+- Programming Language used
 
